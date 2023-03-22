@@ -1,0 +1,28 @@
+{{#each week}}
+<div class="mealDay">
+    <h2 class="Days">{{@key}}</h2>
+    {{!-- <div class="meals-all">
+        <div class="each-meal"> --}}
+            {{#each this.meals}}
+            <div class="mealcollect">
+                <div class="divimg"><img class="mealIm" src="https://spoonacular.com/recipeImages/{{id}}-312x231.jpg" />
+                </div>
+                <div class="titleMinite">{{title}}</div>
+                <div class="titleMinite">ReadyInMinutes : {{readyInMinutes}}</div>
+            </div>
+            {{/each}}
+            {{!--
+        </div> --}}
+
+        {{!-- <div class="each-nutrients">
+            <div class="nutrients">Calories : {{nutrients.calories}}</div>
+            <div class="nutrients">Carbohydrates : {{nutrients.carbohydrates}}</div>
+            <div class="nutrients">Fat : {{nutrients.fat}}</div>
+            <div class="nutrients">Protein : {{nutrients.protein}}</div>
+        </div> --}}
+
+
+        {{!--
+    </div> --}}
+</div>
+{{/each}}

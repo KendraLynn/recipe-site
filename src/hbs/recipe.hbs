@@ -1,0 +1,21 @@
+{{#each recipes}}
+<div id="ran-contents">
+  <div class="ran-imag"><img src="{{image}}" width="500px" height="450px"></div>
+  <div class="ran-info">
+    <h3>Surprise! Your randomly selected recipe is:</h3>
+    <div><strong>Title : </strong> {{title}}</div>
+    <div><strong>Summary：</strong>{{{summary}}}</div>
+
+    <div>
+      <strong>DishType : </strong>
+      {{#each dishTypes}}
+      {{this}}，
+      {{/each}}
+    </div>
+    {{!-- <div><strong>summary :</strong> {{summary}}</div> --}}
+    <div><strong>ReadyInMinutes : </strong>{{readyInMinutes}}</div>
+    <div><strong>instructions :</strong> {{{instructions}}}</div>
+  </div>
+
+</div>
+{{/each}}
