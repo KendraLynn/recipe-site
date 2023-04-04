@@ -457,7 +457,7 @@ body {
 }
 
 .ran-info h3 {
-  color: red;
+  color: #bf9525;
 }
 
 .ran-info ul {
@@ -493,7 +493,7 @@ body {
 #searchbtnid::before {
   content: '';
   position: absolute;
-  background: red;
+  background: #bf9525;
   width: 250px;
   height: 80px;
   z-index: -2;
